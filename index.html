@@ -7,133 +7,63 @@
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <meta name="author" content="name">
-  <meta name="description" content="description here">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cinzel|Permanent+Marker|Abel|Satisfy&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Collins portfolio</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-   
-
-        <nav class=" navbar navbar-expand-md  navbar-dark sticky-top">
-            <!-- Brand -->
-            <a class="navbar-brand text-uppercase" href="#">THRIVE tech</a>
-          
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <!--header with nav items -->
+    <header class="header">
+      <a href="index.html" class="logo">Collins Portfolio</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
-    <main class="container-fluid">
-      <section id="about" class="row">
-        <div class="about-me col-sm mx-auto text-center">
-            <img src="https://res.cloudinary.com/trive/image/upload/v1566521772/crop_5701768515620476773.png" class="img-fluid rounded mx-auto d-block">
-            <h1 class="display-4 text-center">Hi, it's Thrive</h1>
-            <p>Always ready to discuss growth strategies</p>
-        </div>
-      </section>
-      <!-----------------------------------PROJECTS---------------------->
-      <section id="projects" class="row">
-        <div id="demo" class="carousel slide col-sm p-5" data-ride="carousel">
-
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-            <li data-target="#demo" data-slide-to="3"></li>
-            
-          </ul>
-        
-          <!-- The slideshow -->
-          <div class="carousel-inner ">
-            <div class="carousel-item active">
-              <a href="https://www.teamhera.findakit.com" target="_blank">
-              <img class="img-fluid  mx-auto d-block" src="https://res.cloudinary.com/trive/image/upload/v1572107568/crop_8491492098508844884.png" alt="HERA-BUDGET SCREENSHOT">
-            </a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.volunteerng.herokuapp.com" target="_blank">
-                <img class="img-fluid mx-auto d-block" src="https://res.cloudinary.com/trive/image/upload/v1572107531/crop_4100756158771574915.png" alt="volunteerng SCREENSHOT">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.dev.lancers.app" target="_blank">
-                <img class="img-fluid mx-auto d-block" src="https://res.cloudinary.com/trive/image/upload/v1572107596/crop_2524036561326899872.png" alt="lancers SCREENSHOT">
-              </a>
-            </div>
-            <div class="carousel-item">
-              <a href="#" target="_blank">
-                <img class="img-fluid mx-auto d-block" src="https://res.cloudinary.com/trive/image/upload/v1572653856/coming.jpg" alt="lancers SCREENSHOT">
-              </a>
-            </div>
-            
-          </div>
-        
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        
-        </div>
-      </section>
-      <!-----------------------------------------------CONTACT----------------------------------->
-      <section id="contact" class="row font-weight-bolder kk">
-        <div class="col-sm-3 col-md-3 col-xl-3 p-2 text-center">
-          <a href="https://github.com/ccanyanwu" target="_blank"><span><i class="fa fa-github fa-5x"></i><br></span></a>
-					<p class="">GITHUB</p>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xl-3 p-2 text-center">
-          <a href="mailto:eme42c@gmail.com" target="_blank"><span><i class="fa fa-envelope fa-5x"></i></span></a>
-					<p>E-MAIL</p>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xl-3 p-2 text-center">
-          <a href="https://www.linkedin.com/in/chukwuemeka-collins-anyanwu-1768a2139" target="_blank"><span><i class="fa fa-linkedin fa-5x"></i><br></span></a>
-					<p>LINKED-IN</p>
-        </div>
-        <div class="col-sm-3 col-md-3 col-xl-3 p-2 text-center">
-          <a href="https://twitter.com/Cc_anyanwu?s=09" target="_blank"><span><i class="fa fa-twitter fa-5x"></i><br></span></a>
-					<p>TWITTER</p>
-        </div>
-      </section>
-      <footer class="row bg-dark text-white text-center">
-        <div class="col-sm text-center m-0">
-        <p class="p-2 text-center">Designed with care &copy; 2020 <a href="https://www.freecodecamp.org/trive" target="_blank" class="text-white"> thrive <i class="fa fa-free-code-camp fa-2x"></i></a></p>
-        </div>
-      </footer>
-        
-    </main>
-      
-          
-        
-    
+    <!--about -->
+    <article class="about" id="about">
+      <h1 class="hero-header">I am Collins</h1>
+      <p class="hero-para">a frontend web developer <br>and designer </p>
+      <a href="https://twitter.com/Cc_anyanwu?s=09" class="hero-contact" target="_blank" title="contact me">Contact me</a>
+    </article>
+    <!--what's offered -->
+    <section class="offer" id="offer">
+      <h2 class="offer-header">I offer a wide variety of<br> digital Products </h2>
+      <p class="offer-desc">From Social Media awarness and good internet presence with SEO to building an entire website. No project is dificult! </p>
+      <a href="https://plex-fido.netlify.app" class="offer-desc_latest" target="_blank">Latest Project here!</a>
+      <a href="#services" class="offer-more"  title="more info">More Info</a>
+    </section>
+    <!--services-->
+    <section class="services" id="services">
+      <h2 class="services-header">services</h2>
+      <p class="services-sub">what I offer </p>
+      <div class="services-rendered">
+       <div class="services-rendered_sub" style="text-align: center ">
+         <div class="services-rendered_1">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+         </div>
+         <p class="services-rendered_header">Responsiveness</p>
+         <p>Responsive websites </p>
+       </div>
+       <div class="services-rendered_sub" style="text-align: center ">
+         <div class="services-rendered_1">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+         </div>
+         <p class="services-rendered_header">Responsiveness</p>
+         <p>Responsive websites </p>
+       </div>
+       <div class="services-rendered_sub" style="text-align: center ">
+         <div class="services-rendered_1">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+         </div>
+         <p class="services-rendered_header">Responsiveness</p>
+         <p>Responsive websites </p>
+       </div>
+      </div>
+    </section>
   </body>
 </html>
