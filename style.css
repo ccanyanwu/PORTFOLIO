@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap'); 
 :root{
  --primary-bg-color: #940404;
- --secondary-bg-color:#F1E4C2;
+ --secondary-bg-color:#f1e4c2;
 }
 
 /*basic css reset */
@@ -21,7 +21,7 @@ body {
 /* header */
 
 .header {
-  background-color: transparent;
+  background-color: var;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -212,8 +212,12 @@ section.services{
   background :var(--secondary-bg-color);
   padding :5rem 2rem ;
 }
-h2.services-header{
+h2.services-header,
+h2.projects-header{
   text-transform: uppercase ;
+  font-size: small;
+}
+h2.services-header{
   color :var(--primary-bg-color);
 }
 p.services-sub{
@@ -246,6 +250,63 @@ p.services-rendered_header{
   font-weight: 900 ;
   font-size: 1.5rem ;
   margin-top :1rem ;
+}
+
+/*brilliant ideas*/
+section.idea{
+  min-width:100%;
+  background:  linear-gradient( rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.1)), url("idea.jpg");
+  background-size :cover ;
+  background-repeat: no-repeat ;
+  background-position :center ;
+  display:flex;
+  flex-direction:column ;
+  justify-content :center ;
+  align-items: center ;
+  margin:0 0 5rem 0;
+  height :80vh ;
+  text-align: center;
+}
+h2.idea-header{
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(252, 248, 248);
+}
+span.idea-header_primary{
+  color:var(--primary-bg-color);
+}
+a.idea-schedule{
+  display: block;
+  width: 15rem;
+  height: 3.2rem;
+  background: var(--secondary-bg-color);
+  margin-top: 2rem;
+  color:var(--primary-bg-color);
+  text-decoration:none;
+  border-radius: 0.25rem;
+  padding-top: 0.8rem;
+}
+a.idea-schedule:hover{
+  background:var(--primary-bg-color);
+  color:var(--secondary-bg-color);
+}
+/*projects section*/
+section#projects{
+  text-align: center;
+}
+h2.projects-header{
+  color: var(--primary-bg-color);
+}
+/*main tech*/
+section.tech{
+  background: #f4f4f4;
+  text-align: center;
+}
+h2.tech-header{
+  color: var(--primary-bg-color);
+  text-transform: capitalize;
+  
 }
 /* 48em = 768px */
 
