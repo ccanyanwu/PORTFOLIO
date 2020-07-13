@@ -1,7 +1,7 @@
 /*font*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap'); 
 :root{
- --primary-bg-color: #940404;
+ --primary-bg-color:#02507F; 
  --secondary-bg-color:#f1e4c2;
 }
 
@@ -15,13 +15,15 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  wdth :48rem;
+  scroll-behavior: smooth;
 }
 
 
 /* header */
 
 .header {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -33,7 +35,7 @@ body {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 .header li a {
@@ -41,6 +43,7 @@ body {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  color:#000;
 }
 
 .header li a:hover,
@@ -55,6 +58,7 @@ body {
   padding: 10px 20px;
   text-decoration: none;
 }
+
 
 /* menu */
 
@@ -162,7 +166,7 @@ a.offer-more{
   width :9rem;
   height :3.2rem ;
   border-radius :0.25rem ;
-  padding :0.8rem 1.7rem ;
+  padding :0.9rem 1.8rem ;
   }
 a.hero-contact{
   color :var(--primary-bg-color);
@@ -178,6 +182,8 @@ a{
 /*offer*/
 section.offer{
   text-align: center ;
+  padding-bottom: 8rem ;
+  padding-top: 4rem ;
 }
 h2.offer-header,
 h2.services-header{
@@ -210,7 +216,7 @@ a.offer-more:hover{
 /*services */
 section.services{
   background :var(--secondary-bg-color);
-  padding :5rem 2rem ;
+  padding :8rem 2rem  ;
 }
 h2.services-header,
 h2.projects-header{
@@ -246,7 +252,7 @@ div.tech-rendered_1{
   margin :0 auto ;
 }
 div.services-rendered_1{
-  background :#333;
+  background :var(--primary-bg-color);
 }
 div.services-rendered_1 i{
   color :var(--secondary-bg-color);
@@ -300,6 +306,8 @@ a.idea-schedule:hover{
 /*projects section*/
 section#projects{
   text-align: center;
+  margin-top :3rem ;
+  padding-top :3rem ;
 }
 h2.projects-header{
   color: var(--primary-bg-color);
@@ -376,6 +384,7 @@ section.youCan a{
 footer.footer{
   text-align :center ;
   padding:3rem 3rem 1rem 3rem;
+  margin-top: 3rem ;
 }
 div.footer-social{
   display :flex ;
