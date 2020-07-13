@@ -334,6 +334,8 @@ p.projects-card_para{
 section.tech{
   background: #f4f4f4;
   text-align: center;
+  margin-top :8rem ;
+  padding-top: 8rem ;
 }
 h2.tech-header{
   color: var(--primary-bg-color);
