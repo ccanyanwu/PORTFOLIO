@@ -375,7 +375,7 @@ section.youCan a{
 /*footer*/
 footer.footer{
   text-align :center ;
-  padding:3rem  ;
+  padding:3rem 3rem 1rem 3rem;
 }
 div.footer-social{
   display :flex ;
@@ -392,6 +392,13 @@ div.footer-social a{
   border-radius :50%;
   color :var(--secondary-bg-color);
   text-decoration :none ;
+  box-shadow:  5px 5px 11px #bdbdbd, -5px -5px 11px #ffffff;
+}
+p.footer-para{
+  color :#000;
+  font-size :10px;
+  font-weight: 900 ;
+  padding-top: 2rem;
 }
 /* 48em = 768px */
 
