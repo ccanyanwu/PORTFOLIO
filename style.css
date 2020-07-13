@@ -229,25 +229,30 @@ p.services-sub{
   margin-bottom: 4rem ;
 }
 div.services-rendered,
-div.projects-display{
+div.projects-display,
+div.tech-rendered{
   display: grid ;
   grid-template-columns :auto ;
   grid-gap: 4rem ;
   justify-content :center ;
   align-content: center ;
 }
-div.services-rendered_1{
+div.services-rendered_1,
+div.tech-rendered_1{
   width: 9rem;
   height: 9rem;
   border-radius :50%;
-  background :#333;
   padding-top: 3rem  ;
   margin :0 auto ;
+}
+div.services-rendered_1{
+  background :#333;
 }
 div.services-rendered_1 i{
   color :var(--secondary-bg-color);
 }
-p.services-rendered_header{
+p.services-rendered_header,
+p.tech-rendered_header{
   font-weight: 900 ;
   font-size: 1.5rem ;
   margin-top :1rem ;
@@ -270,7 +275,7 @@ section.idea{
 }
 h2.idea-header{
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.75rem;
   text-align: center;
   color: rgb(252, 248, 248);
 }
@@ -340,7 +345,16 @@ section.tech{
 h2.tech-header{
   color: var(--primary-bg-color);
   text-transform: capitalize;
-  
+  font-weight: 900 ;
+  font-size :2.75rem ;
+  margin-bottom :3rem;
+}
+div.tech-rendered_1{
+  background: #fff;
+  box-shadow:  0px 5px 11px #bdbdbd, -5px 0px 11px #ffffff;
+}
+div.tech-rendered_1 i{
+  color :var(--secondary-bg-color);
 }
 /* 48em = 768px */
 
