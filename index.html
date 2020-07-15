@@ -8,12 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Collins portfolio</title>
+    <!--animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
     <!--header with nav items -->
-    <header class="header">
-      <a href="index.html" class="logo focus-in-contract-bck" style="color:#000 " >THRIVE TECH</a>
+    <header class="header slide-in-top">
+      <a href="index.html" class="logo " style="color:#000 " >THRIVE TECH</a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -25,12 +27,12 @@
     </header>
     <!--about -->
     <article class="about " id="about">
-      <h1 class="hero-header ">I am Collins</h1>
-      <p class="hero-para">a frontend web developer <br>and designer </p>
-      <a href="https://twitter.com/Cc_anyanwu?s=09" class="hero-contact" target="_blank" title="contact me">Contact me</a>
+      <h1 class="hero-header type">I am Collins</h1>
+      <p class="hero-para text-focus-in">a frontend Software Engineer</p>
+      <a href="https://twitter.com/Cc_anyanwu?s=09" class="hero-contact slide-in-bottom text-focus-in " target="_blank" title="contact me">Contact me</a>
     </article>
     <!--what's offered -->
-    <section class="offer" id="offer">
+    <section class="offer " data-aos="fade-up" data-aos-duration="3000" id="offer">
       <h2 class="offer-header">I offer a wide variety of<br> digital Products </h2>
       <p class="offer-desc">From Social Media awarness and good internet presence with SEO to building an entire website. No project is dificult! </p>
       <a href="https://plex-fido.netlify.app" class="offer-desc_latest" target="_blank">Latest Project here!</a>
@@ -38,31 +40,31 @@
     </section>
     <!--services-->
     <section class="services" id="services">
-      <h2 class="services-header">services</h2>
-      <p class="services-sub">what I offer </p>
+      <h2 class="services-header  " data-aos="fade-up" data-aos-duration="2000">services</h2>
+      <p class="services-sub" data-aos="fade-up" data-aos-duration="3000">what I offer </p>
       <div class="services-rendered">
-       <div class="services-rendered_sub" style="text-align: center ">
-         <div class="services-rendered_1">
-          <i class="fas fa-mobile-alt fa-3x"></i>
+       <div class="services-rendered_sub" data-aos="zoom-out-right" data-aos-duration="2000" style="text-align: center ">
+         <div class="services-rendered_1 ">
+          <i class="fas fa-mobile-alt fa-3x "></i>
          </div>
          <p class="services-rendered_header">Responsiveness</p>
          <p>Responsive websites </p>
        </div>
-       <div class="services-rendered_sub" style="text-align: center ">
+       <div class="services-rendered_sub" style="text-align: center" data-aos="fade-up" data-aos-duration="2000">
          <div class="services-rendered_1">
           <i class="fas fa-scroll fa-3x "></i>
          </div>
          <p class="services-rendered_header">Original Content</p>
          <p>Never worry about plagiarism </p>
        </div>
-       <div class="services-rendered_sub" style="text-align: center ">
+       <div class="services-rendered_sub" style="text-align: center" data-aos="fade-down" data-aos-duration="2000"  >
          <div class="services-rendered_1">
           <i class="far fa-thumbs-up fa-3x"></i></i>
          </div>
          <p class="services-rendered_header">Satisfaction</p>
          <p>Client satisfaction guaranteed </p>
        </div>
-       <div class="services-rendered_sub" style="text-align: center ">
+       <div class="services-rendered_sub" style="text-align: center "data-aos="zoom-out-right" data-aos-duration="3000">
          <div class="services-rendered_1">
            <i class="far fa-comments fa-3x "></i>
          </div>
@@ -72,13 +74,13 @@
       </div>
     </section>
     <!--brilliant ideas-->
-    <section class="idea">
-      <h2 class="idea-header">Brilliant ideas for <span class="idea-header_primary">your</span> next Website!</h2>
-      <a href="#services" class="idea-schedule"  title="more info">Schedule an appointment</a>
+    <section class="idea" >
+      <h2 class="idea-header" data-aos="zoom-in" data-aos-duration="2000">Brilliant ideas for <span class="idea-header_primary">your</span> next Website!</h2>
+      <a href="#services" class="idea-schedule" data-aos="zoom-in" data-aos-duration="2000" title="more info">Schedule an appointment</a>
     </section>
     <!--projects-->
     <section class="projects" id="projects">
-      <h2 class="projects-header">portfolio</h2>
+      <h2 class="projects-header" >portfolio</h2>
       <p class="services-sub">Projects on Github & Netlify </p>
       <div class="projects-display">
        <a href="https://plex-fido.netlify.app" target="_blank" class="projects-card">
@@ -164,7 +166,13 @@
       </div>
       <p class="footer-para">Copyright © THRIVE TECH 2020 </p>
     </footer>
+    
+    <!--animate on scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--font awesome link -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

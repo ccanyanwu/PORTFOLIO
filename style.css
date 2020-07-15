@@ -20,10 +20,42 @@ body {
 }
 
 /*animations */
-.focus-in-contract-bck{animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both}
-@keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}}
-/* header */
+/*slide in*/
+.slide-in-top{animation:slide-in-top 2s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
 
+/*blur in */
+.text-focus-in{animation:text-focus-in 5s cubic-bezier(.55,.085,.68,.53) both}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+/*slide in bottom*/
+.slide-in-bottom{animation:slide-in-bottom 6s cubic-bezier(.25,.46,.45,.94) both}
+
+
+/*type writer*/
+.type{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--secondary-bg-color); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: var(--secondary-bg-color); }
+}
+
+/* header */
 .header {
   background-color: var(--primary-bg-color);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -322,10 +354,7 @@ a.projects-card{
   box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
   transition-duration: 1s;
 }
-a.projects-card:hover{
-  box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
-  width: 20rem;
-}
+
 a.projects-card img{
   display :block ;
   width: 100%;
